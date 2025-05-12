@@ -6,6 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, '../public')));
+app.use('/src', express.static(path.resolve(__dirname, '../src')));
 
 // 六爻占卜接口
 app.post('/api/divination/liuyao/full', (req, res) => {

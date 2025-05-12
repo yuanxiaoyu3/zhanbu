@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#question {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #cd853f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #daa520;
+}
+
+.result-section {
+    display: flex;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-section {
+    flex: 1;
+    text-align: center;
+}
+
+.right-section {
+    flex: 2;
+}
+
+.gua-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.hexagram {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.line {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.line-full {
+    width: 200px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.line-part {
+    width: 90px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.gua-analysis {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.advice-section {
+    margin-top: 20px;
+}
+
+.advice-section h4 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.advice-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advice-section li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.advice-section li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+}
+.hexagram-section {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+#hexagram {
+    margin: 20px 0;
+}
+
+.line {
+    height: 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-full {
+    width: 100px;
+    height: 4px;
+    background: #000;
+}
+
+.line-part {
+    width: 40px;
+    height: 4px;
+    background: #000;
+    margin: 0 10px;
+}
+
+#guaTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#guaSymbol {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.advice-section {
+    /* AI建议区域样式 */
+    .ai-advice {
+        margin-top: 20px;
+        border-top: 2px dashed #f0c674;
+        padding-top: 15px;
+        background-color: rgba(240, 198, 116, 0.05);
+        border-radius: 8px;
+        padding: 15px;
+    }
+    
+    .ai-advice .analysis-title {
+        color: #f0c674;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    /* Markdown 样式 */
+    #ai-advice-content h1, 
+    #ai-advice-content h2, 
+    #ai-advice-content h3 {
+        color: #f0c674;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    #ai-advice-content h1 {
+        font-size: 1.5em;
+        border-bottom: 1px solid rgba(240, 198, 116, 0.3);
+        padding-bottom: 5px;
+    }
+    
+    #ai-advice-content h2 {
+        font-size: 1.3em;
+    }
+    
+    #ai-advice-content h3 {
+        font-size: 1.1em;
+    }
+    
+    #ai-advice-content ul, 
+    #ai-advice-content ol {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+    
+    #ai-advice-content li {
+        margin-bottom: 5px;
+    }
+    
+    #ai-advice-content p {
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+    
+    #ai-advice-content blockquote {
+        border-left: 3px solid #f0c674;
+        padding-left: 10px;
+        margin: 10px 0;
+        color: #aaa;
+    }
+    
+    #ai-advice-content code {
+        background-color: rgba(240, 198, 116, 0.1);
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-family: monospace;
+    }
+    
+    #ai-advice-content strong {
+        color: #f0c674;
+    }
+    
+    #ai-advice-content a {
+        color: #6c9ef8;
+        text-decoration: none;
+    }
+    
+    #ai-advice-content a:hover {
+        text-decoration: underline;
+    }
+    
+    .loading {
+        color: #888;
+        font-style: italic;
+    }
+    
+    .error {
+        color: #e06c75;
+        font-style: italic;
+    }
+
+.analysis-content {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.analysis-content p {
+    margin-bottom: 15px;
+}
+
+.analysis-content strong {
+    color: #ffd700;
+    margin-right: 10px;
+}

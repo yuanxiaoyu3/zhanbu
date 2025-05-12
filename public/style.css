@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #2a1b3d;
+    --secondary-color: #1c1c3d;
+    --text-color: #e0e0e0;
+    --accent-color: #8b4513;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', sans-serif;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.daily-fortune {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fortune-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 15px;
+}
+
+.date {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.fortune-content {
+    margin: 15px 0;
+}
+
+.fortune-content p {
+    margin: 12px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.lucky-items {
+    /* 为新增的运势部分添加样式 */
+    .fortune-section {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .fortune-section h3 {
+      color: #ffd700;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+    
+    .fortune-section p {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #e0e0e0;
+    }
+    margin: 8px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #ffd700;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 8px;
+    background: var(--primary-color);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.nav-item.active {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* 适配不同屏幕尺寸 */
+@media (max-width: 320px) {
+    .content {
+        padding: 12px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .nav-item {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        max-width: 600px;
+    }
+}
+
+.hexagram-container {
+    display: flex;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.hexagram-left {
+    flex: 0 0 40%;
+    padding-right: 15px;
+}
+
+.hexagram-info {
+    flex: 1;
+    padding-left: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 六爻卦象样式 */
+.hexagram {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 20px;
+}
+
+.line-full {
+    width: 100px;
+    height: 8px;
+    background-color: #333;
+    margin-top: 6px;
+}
+
+.line-part {
+    width: 40px;
+    height: 8px;
+    background-color: #333;
+    margin-top: 6px;
+}
+
+.advice-section {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.advice-section ul {
+    padding-left: 20px;
+}
+
+.gua-name {
+    color: #ffd700;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.gua-text {
+    color: #e0e0e0;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.question-input {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.question-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+}
+
+.question-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.question-input button:hover {
+    background: #a0522d;
+}
